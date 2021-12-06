@@ -8,17 +8,18 @@ By now you have use Grid search hyper-parameters and maybe it become your de fac
 
 According to the Journal of Machine Learning Research 13 (2012) 281-305. https://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf
 
-Grid search experiments are more efficient because not all hyper-parameters are equally important to tune. Grid search experimnts allocote too many trials to the exploration of dimensions that do not matter and suffer from poor coverage in dimensions that are
-important. Compared with the grid search experiments of Larochelle et al. (2007), random search
-found better models in most cases and required less computational time.
-Random experiments are also easier to carry out than grid experiments for practical reasons
-related to the statistical independence of every trial.
-• The experiment can be stopped any time and the trials form a complete experiment.
-• If extra computers become available, new trials can be added to an experiment without having
-to adjust the grid and commit to a much larger experiment.
-• Every trial can be carried out asynchronously.
-• If the computer carrying out a trial fails for any reason, its trial can be either abandoned or
-restarted without jeopardizing the experiment.
+     Grid search experiments are more efficient because not all hyper-parameters are equally important to tune. Grid search experimnts allocote too many trials to the exploration of dimensions that do not matter and suffer from poor coverage in dimensions that are important. Compared with the grid search experiments of Larochelle et al. (2007), random search found better models in most cases and required less computational time.
+    Random experiments are also easier to carry out than grid experiments for practical reasons
+    related to the statistical independence of every trial.
+    • The experiment can be stopped any time and the trials form a complete experiment.
+    
+    • If extra computers become available, new trials can be added to an experiment without having
+      to adjust the grid and commit to a much larger experiment.
+      
+    • Every trial can be carried out asynchronously.
+    
+    • If the computer carrying out a trial fails for any reason, its trial can be either abandoned or
+      restarted without jeopardizing the experiment.
 
 ###### To simplify the Above paper
 I will use betting game to simplify the Random search.
